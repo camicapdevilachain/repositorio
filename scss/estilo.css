@@ -1,0 +1,363 @@
+/* No CSS *//*# sourceMappingURL=estilo.css.map */
+// Base Style
+.navbar {
+    position: fixed;
+    img {
+        margin: 0;
+        width: 0px;
+    }
+  
+}
+#content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../Front/imagenes/Pág\ 1.jpg") no-repeat center center;
+    background-size: cover;
+    h1, h3 {
+      margin:  0;
+      color: #24492e;
+      text-align: center;
+    }
+}
+// Feature Style
+#mobile-footer {
+    position: center;
+    bottom: 0;
+    width: 100%;
+    @media(min-width: 768px) {
+        display: none;
+    }
+  
+}
+#mobile-menu {
+    background: #24492e
+}
+#mobile-footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.mobile-link {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+.mobile-link a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+#mobile-footer-close {
+    position: relative;
+    bottom: -5cm;
+}
+
+
+
+
+.is-rotating {
+    transform: rotate(135deg);
+}
+.is-rotating-back {
+    transform: rotate(-90deg);
+}
+.mobile-menu-hide {
+    animation: hideFooter 10s forwards;
+}
+.mobile-menu-show {
+    animation: showFooter 1s forwards;
+}
+@keyframes hideFooter {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+}
+@keyframes showFooter {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*titulo estilo*/
+
+body, html {
+    margin: 0;
+    height: 10%;
+    text-align: left;
+    font-family: 'Oxygen Mono', monospace;
+    color: rgb(0, 0, 0);
+  }
+  
+  h1 {
+      text-align: left;
+      position:inherit;
+   /* text-transform: uppercase;*/
+    letter-spacing: 2pt;
+    font-size: 50pt;
+    margin-bottom: 15px;
+  }
+  
+ 
+  
+  
+  #centeralign {
+      display: table-cell;
+      vertical-align: left;
+  }
+
+
+
+  /*flexbox*/
+
+  .box {
+    display: flex;
+    flex-direction:column;
+  }
+
+
+ /*modelbox*/
+ .ejemplo {
+     position:absolute;
+    width: 350px;
+    height: 150px;
+   bottom: -6cm;
+    background-color:#24492e;
+    /*padding-top: 5px;*/
+    margin-left: 24cm;
+    border-bottom: 1px solid;
+}    
+
+
+.Eventos{
+
+ font-family: fantasy;
+ color:#fff;
+
+}
+
+
+/*grid*/
+#grilla {
+   display: grid; 
+   grid-template-areas:
+     "header header header"
+     "nav productos publicidad"
+     "nav servicios publicidad"
+     "footer footer footer";
+   grid-template-columns: 150px  900px;
+   grid-template-rows: 10px 500px 400px 100px 400px;
+   grid-column-gap: 20px;
+   grid-row-gap: 10px;
+   height: 100vh; 
+
+}
+.border {
+   border: 0px;
+   background-color: rgb(255, 255, 255);
+}
+
+
+header {
+   grid-area: header ;
+   background-image: url("../Front/imagenes/Pág\ 46.jpg");
+   
+}
+footer {
+   grid-area: footer;
+}
+section#productos {
+   grid-area: productos;
+   background-color: #ff0000;    
+   
+
+   background-image: url("../Front/imagenes/5.jpg");
+   width:1000px;
+    height:600px;
+}
+section#servicios {
+   grid-area: servicios;
+   background-color:rgb(37, 218, 31) ;   
+   background-image: url("../Front/imagenes/15.jpg");
+   top: -1000px;
+   width:1000px;
+   height:500px;
+
+} 
+}
+nav {
+   grid-area: nav;
+}
+aside {
+   grid-area: publicidad;
+}
+
+
+@media only screen and (min-width: 768px) {
+   body {
+           background-color: white;
+     } 
+}
+
+/*contacto*/
+
+.contacto{
+    position:absolute;
+   width: 350px;
+   height: 555px;
+  bottom: -1cm;
+   border:5px solid #24492e;
+   /*padding-top: 5px;*/
+   margin-left: 0cm;
+   border-bottom: 1px solid;
+}    
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body{
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    
+  }
+
+  .contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+  }
+
+  input{
+    background-color: #fbfbfb; 
+    width: 108px; 
+    height: 20px; 
+    border-radius: 10px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #1a5a42; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 10px; 
+  }
+ 
+
+  label{
+    display: block; 
+    float: center;  
+  }
+
+
+ /*boton*/
+
+ .btn{
+  position: relative;
+  display:block;
+  color: rgb(24, 83, 50);
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 5px 0;
+  border: 1px solid #08250b;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before{
+  background:#08250b;
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10%,-10%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+ .btn1::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+
+  /*datos*/
+  @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+  .datos{
+    position:absolute;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+   width: 500px;
+   height: 300px;
+  bottom: 5cm;
+   background-color: #24492e;
+   /*padding-top: 5px;*/
+   margin-left: 12cm;
+   
+}    
+
+
+/*redes*/
+*{box-sizing:border-box;}
+
+		
+
+		.social{
+			/*las imágenes usadas tienen width de 48px*/
+			width:20px;
+			position:fixed;
+			top:50px;
+            right:200px;
+            
+		}
+
+		/* Extra centrado vertical*/
+        .social{
+			/*border:1px solid #000;*/
+			top:50%;
+			height:100px;
+			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+            margin-top:-100px;
+            
+        }
+        
+
+
+
+        $ancho: 500px;
+$red: #FF1F00;
+$yellow: #FFEF26;
+$black: #000000;.caja_uno {
+    background-color: yellow;
+    width: $ancho/2;
+}.caja_dos {
+    background-color: $red;
+    width: ($ancho*2)-200;
+}.caja_tres {
+    background-color: $black;
+    width: ($ancho/2)+100;
+}
+
+
